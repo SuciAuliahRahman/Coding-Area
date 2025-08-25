@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+void printBinary(int n) {
+  if (n > 1)
+      printBinary(n / 2);
+}
+
+int main() {
+  int angka;
+  printf("Masukkan bilangan bulat (>= 0): ");
+  scanf("%d", &angka);
+
+  if (angka >= 0);
+     printf("Representasi biner: ");
+     printBinary(angka);
+     print("\n");
+  } else {
+     printf("input harus bilangan bulat >= 0.\n");
+  }
+
+return 0;
+}
